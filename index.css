@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #201c1c;
+    color: aliceblue;
+}
+.perfil {
+    width: 400px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Añade esquinas redondeadas */
+    margin-top: 25px;
+    margin-left: 300px;
+}
+.contenedor {
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+
+#home h1 {
+    font-size: 4rem; /* Aumenta el tamaño de h1 */
+    margin-left: 60px;
+}
+
+#home h2 {
+    font-size: 60px;
+    color:#da1226;
+    margin-left: 60px;
+}
+.text {
+    display: inline-block; /* Para que se aplique el margen vertical */
+    margin-top: 10px; /* Ajusta este valor según necesites */
+    color: #ffffff; /* Color sombra rojizo */
+    font-size: 45px;
+    margin-left: 35px;
+        font-family: 'Source Code Pro', monospace;
+}
+.text .typed-cursor {
+    font-size: 60px; /* Cambia este valor al tamaño que desees */
+}
+.navbar {
+    min-height: 100px; 
+    background-color: #0e0c0ca5; 
+    overflow: hidden; 
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    position: relative; /* Necesario para el posicionamiento de la línea */
+    overflow: hidden; /* Asegura que la línea no se desborde */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 10px 20px; /* Espaciado */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 17px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de la fuente */
+    transition: color 0.3s ease; /* Transición para el color del texto */
+    line-height: 5
+}
+
+.navbar a::after {
+    content: ""; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posición absoluta respecto al enlace */
+    left: 50%; /* Centra la línea */
+    bottom: 0; /* Posición en la parte inferior */
+    width: 0; /* Inicialmente la línea tiene un ancho de 0 */
+    height: 2px; /* Altura de la línea */
+    background-color: #da1226; /* Color de la línea */
+    transition: width 0.3s ease, left 0.3s ease; /* Animación suave */
+}
+
+.navbar a:hover {
+    color: #da1226; /* Cambia el color del texto al pasar el mouse */
+}
+
+.navbar a:hover::after {
+    width: 100%; /* Al pasar el mouse, la línea se expande */
+    left: 0; /* La línea se alinea a la izquierda */
+}
+#sobre-mi{
+    background-color: #ffffff;
+    color:#000000;
+    font-size: 25px;
+    line-height: 1.2;
+    text-align:left
+}
+#sobre-mi p {
+    margin-left: 20px;  /* Ajusta el margen izquierdo */
+    margin-right: 20px; /* Ajusta el margen derecho */
+}
+#sobre-mi h2{
+    text-align: center;
+}
+hr {
+    border: none;               /* Elimina el borde predeterminado */
+    height: 3px;                /* Grosor de la línea */
+    background-color: #ae1111;  /* Color de la línea */
+    width: 100%;                 /* Ancho de la línea */
+    margin: 20px auto;          /* Espaciado y centrado */
+}
+.icon-container {
+    display: flex; /* Utiliza flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    gap: 20px; /* Espacio entre iconos */
+    margin: 40px 0; /* Margen superior e inferior */
+}
+
+.icon-container i {
+    transition: transform 0.3s, color 0.3s; /* Efecto suave para transformaciones */
+    color: #4DB33D; /* Color base */
+    font-size: 30px;
+}
+
+.icon-container i:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+    color: #ae1111; /* Cambia el color al pasar el ratón */
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+    background: black;
+  }
+  .footer .social-media{
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+  }
+  .social-media a i{
+    font-size: 25px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    box-shadow: inset 0 0 30px #da1226, 0 0 30px #da1226;
+    transition: 0.3s ease;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .social-media a i:hover{
+    transform: scale(1.2)translateY(-15px);
+    color: #ffffff;
+    border: 2px solid #da1226;
+  }
+  .footer ul {
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  text-align: center;
+  }
+  .footer ul li a {
+    color: white;
+    font-size: 18px;
+   line-height: 1.6;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+  }
+  .footer ul li a:hover {
+    border-bottom: 3px solid #da1226;
+  }
+  .footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+  }
+  .footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size:12px;
+    color: white; 
+  }
+#proyectos h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#proyectos p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color:#ffffff;
+    font-family: 'Source Code Pro', monospace;
+}
+  @media screen and (min-width: 500px) and (max-width: 800px) {
+  .social-media a i {
+    font-size: 25px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    gap: 15px;
+  }
+  .footer ul li a {
+    font-size: 16px;
+   line-height: 1.6;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+  }
+  }
+  @media screen and (max-width: 499px) {
+  .social-media a i {
+    font-size: 15px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+    gap: 5px;
+  }
+  .footer ul li {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid transparent;
+  }
+  .footer ul li a {
+  font-size: 13px;
+  line-height: 1.5;
+  }
+  .footer ul li a:hover {
+    color: #efefef;
+    border-bottom: 3px solid transparent;
+  }
+  }
+  .footer h2 {
+    text-align: center;
+    color: #f9f9f9; /* Color del texto */
+    text-shadow: 2px 2px 4px #da1226; /* Sombra de texto roja */
+    transition: all 0.3s ease; /* Suaviza la transición al pasar el mouse */
+}
+
+
+
+  .proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.proyectosolo {
+    text-align: center;
+    margin: 10px;
+    flex: 0 1 calc(50% - 20px); /* Ajusta para mostrar dos por fila */
+    box-sizing: border-box;
+}
+
+.imagen {
+    width: 100%;
+    max-width: 500px; /* Tamaño máximo uniforme para todas las imágenes */
+    height: 250px; /* Ajusta la altura a tu necesidad */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto de sombra */
+    border-radius: 15px;
+}
+
+.proyectosolo:hover .imagen {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Sombra roja al pasar el mouse */
+}
+
+.proyectosolo p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .proyectosolo {
+        flex: 0 1 100%; /* Cada imagen ocupará el 100% en pantallas pequeñas */
+    }
+}
+#contacto .btn {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease; 
+    text-decoration: none;
+    margin-left: 540px;
+   }
+#contacto .btn:hover {
+background-color:#da1226;
+box-shadow: 0 0 50px #da1226;
+color: white;
+}
+.footer p{
+    margin-top: 40px !important; 
+}
+
+
+
